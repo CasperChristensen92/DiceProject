@@ -48,7 +48,7 @@ public class RollTwoDice {
         scanner.close();
     }
 
-    public static void printNumbers(int[] integerArray) {
+    private static void printNumbers(int[] integerArray) {
         for (int number : integerArray) {
             System.out.print(number + " ");
         }
@@ -89,7 +89,7 @@ public class RollTwoDice {
         printRolledDice(rolledDice);
     }
 
-    public static void printRolledDice(int[] integerArray) {
+    private static void printRolledDice(int[] integerArray) {
         for (int i = 0; i < 6; i++) {
             System.out.print(i + 1 + ": " + integerArray[i] + " | ");
         }
