@@ -181,6 +181,13 @@ public class Pigs {
         else System.out.println(p1Name + " and " + p2Name + " is tied");
     }
 
+    private static void printNumbers(int[] integerArray) {
+        for (int number : integerArray) {
+            System.out.print(number + " ");
+        }
+        System.out.println(" ");
+    }
+
     private static void updateStatistics(int p1Score, int p2Score) {
         if (p1Score > p2Score) p1Wins += 1;
         if (p2Score > p1Score) p2Wins += 1;
@@ -192,13 +199,6 @@ public class Pigs {
         System.out.println(p2 + " has won " + p2Wins + " rounds");
         System.out.println(p1 + " has used " + p1Rounds / p1Turns + " runds per turn");
         System.out.println(p2 + " has used " + p2Rounds / p2Turns + " runds per turn");
-    }
-
-    private static void printNumbers(int[] integerArray) {
-        for (int number : integerArray) {
-            System.out.print(number + " ");
-        }
-        System.out.println(" ");
     }
 
 
