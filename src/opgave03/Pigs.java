@@ -52,7 +52,7 @@ public class Pigs {
             int p2Points = 0;
             while (p1Points < n && p2Points < n) {
                 System.out.println("It is now " + player1 + "'s turn to play");
-                int[] turn = playOneTurn(d);
+                int[] turn = playOneTurn(d); //makes an array of length 2 if d=1 and length 3 if d > 1. First index is the sum of the turn. Second index is have many rounds the turn has taken, and if there is a third index it indicates if the player has only rolled 1's.
                 if (d != 1 && turn[2] == 1) p1Points =0; // there is only an index 2 if we play with more than one dice. And if that points to a value of 1 it means we have rolled only 1's and the players points need to be reset
                 else p1Points += turn[0];
                 p1Rounds += turn[1];
