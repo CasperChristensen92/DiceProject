@@ -67,10 +67,10 @@ public class Pigs {
                 displayStatus(p1Points, p2Points, player1, player2);
             }
             if (p1Points > p2Points) {
-                System.out.println("Congratulations " + player1 + "! You won over" + player2 + " with " + p1Points + " against " + p2Points);
+                System.out.println("Congratulations " + player1 + "! You won over " + player2 + " with " + p1Points + " against " + p2Points);
                 updateStatistics(p1Points, p2Points);
             } else {
-                System.out.println("Congratulations " + player2 + "! You won over" + player1 + " with " + p2Points + " against " + p1Points);
+                System.out.println("Congratulations " + player2 + "! You won over " + player1 + " with " + p2Points + " against " + p1Points);
                 updateStatistics(p1Points, p2Points);
             }
 
