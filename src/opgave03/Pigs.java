@@ -197,8 +197,8 @@ public class Pigs {
     private static void printStatistics(String p1, String p2) {
         System.out.println(p1 + " has won " + p1Wins + " rounds");
         System.out.println(p2 + " has won " + p2Wins + " rounds");
-        System.out.println(p1 + " has used " + p1Rounds / p1Turns + " runds per turn");
-        System.out.println(p2 + " has used " + p2Rounds / p2Turns + " runds per turn");
+        System.out.println(p1 + " has used " + ((double) p1Rounds) / p1Turns + " runds per turn");
+        System.out.println(p2 + " has used " + ((double) p2Rounds) / p2Turns + " runds per turn");
     }
 
 
