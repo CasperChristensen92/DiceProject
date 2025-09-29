@@ -70,7 +70,7 @@ public class Craps {
         while (newPoint !=point || newPoint != 7) {
             newPoint = 0;
             int[] newRoll = rollDice(2);
-            System.out.println("You new roll is: ");
+            System.out.println("Your new roll is: ");
             printNumbers(newRoll);
             for (int x : newRoll) {
                 newPoint +=x;
